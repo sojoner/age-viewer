@@ -44,7 +44,6 @@ test-docker: build-docker
 		-p 3000:3000 \
 		-p 3001:3001 \
 		--name age-viewer-test \
-		-e NODE_ENV=production \
 		age-viewer:latest
 	@echo "$(GREEN)Container stopped$(NC)"
 
